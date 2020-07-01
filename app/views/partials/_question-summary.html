@@ -1,0 +1,31 @@
+<h2 class="govuk-heading-m">Previous answers</h2>
+
+<p class="govuk-body">
+  <a class="govuk-link govuk-link--no-visited-state" href="/">Start again</a>
+</p>
+
+{%- set sectorsHtml %}
+<ul class="govuk-list">
+  {%- for sector in data.answers['sectors'] %}
+    <li>{{ sector | getAnswerAsString('sectors') }}</li>
+  {% endfor -%}
+</ul>
+{% endset -%}
+
+{{ govukTable({
+  firstCellIsHeader: false,
+  head: [
+    {
+      text: "Question"
+    },
+    {
+      text: "Answer"
+    },
+    {
+      text: "Change answer"
+    }
+  ],
+  rows: [
+
+  ]
+}) }}

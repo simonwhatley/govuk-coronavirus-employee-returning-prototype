@@ -1,0 +1,82 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  {{ question.title }}
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/phase-banner.html" %}
+{{ govukBackLink({
+  text: "Back",
+  href: actions.back
+}) if actions.back | length }}
+{% endblock %}
+
+{% block content %}
+
+{% include "./partials/_error-summary.html" %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      {{ serviceName }}
+    </h1>
+
+    <form action="{{ actions.next }}" method="post" accept-charset="utf-8" novalidate>
+
+      {%- if question.type == 'single' %}
+        {{ govukRadios({
+          idPrefix: question.id,
+          name: question.name,
+          fieldset: {
+            legend: {
+              text: question.label.text,
+              classes: "govuk-fieldset__legend--m"
+            }
+          },
+          hint: {
+            text: question.hint.text
+          } if question.hint,
+          errorMessage: errors | getErrorMessage(question.id),
+          items: question.items
+        }) }}
+      {% endif -%}
+
+      {%- if question.type == 'multiple' %}
+        {{ govukCheckboxes({
+          idPrefix: question.id,
+          name: question.name,
+          fieldset: {
+            legend: {
+              text: question.label.text,
+              classes: "govuk-fieldset__legend--m"
+            }
+          },
+          hint: {
+            text: question.hint.text
+          } if question.hint,
+          errorMessage: errors | getErrorMessage(question.id),
+          items: question.items
+        }) }}
+      {% endif -%}
+
+      {{ govukButton({
+        text: "Next step",
+        classes: "govuk-!-margin-top-5"
+      }) }}
+
+    </form>
+
+  </div>
+</div>
+
+{% if data['answers'] | length %}
+  <div class="govuk-grid-row govuk-!-margin-top-5">
+    <div class="govuk-grid-column-two-thirds">
+      {% include "./partials/_question-summary.html" %}
+    </div>
+  </div>
+{% endif -%}
+
+{% endblock %}

@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/phase-banner.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      {{ serviceName }}
+    </h1>
+
+    <p class="govuk-body">
+      Use this service to find out if you should go back to work during this phase of coronavirus lockdown, and what you can do if you should not be going into work.
+    </p>
+
+    <p class="govuk-body">
+      If you’re currently on furlough you can stay on furlough. However, if you are asked to come off furlough by your employer, you can use this service to find out if you should be going back into work, and how to return to work safely.
+    </p>
+
+    <p class="govuk-body">
+      You will be asked about your:
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>type of work</li>
+      <li>health</li>
+      <li>household</li>
+    </ul>
+
+    {{ govukInsetText({
+      text: "If you or anyone in your household currently have symptoms of coronavirus then you must not go to work."
+    }) }}
+
+    <p class="govuk-body">
+      This guidance is only for England.
+    </p>
+
+    <p class="govuk-body">
+      Guidance from the <a class="govuk-link" rel="external" href="https://www.gov.scot/publications/coronavirus-covid-19-phase-1-returning-to-work/">Scottish Government</a>, <a class="govuk-link" rel="external" href="https://gov.wales/work-skills-financial-support">Welsh Government</a> and <a class="govuk-link" rel="external" href="https://www.nidirect.gov.uk/articles/coronavirus-covid-19-advice-workers">Northern Ireland Assembly</a> is also available.
+    </p>
+
+    {{ govukButton({
+      text: "Start now",
+      href: actions.start,
+      isStartButton: true,
+      classes: "govuk-!-margin-top-5"
+    }) }}
+
+    <!-- <p class="app-c-meta-data">
+      Last updated: 27 May 2020
+    </p> -->
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/breadcrumbs";
+@import "components/cookie-banner";
+@import "components/covid";
+@import "components/global-bar";
+@import "components/govspeak";
+@import "components/headings";
+@import "components/markdown";
+@import "components/print-link";
+@import "components/title";
+
+// Objects
+@import "objects/tables";
+
+// Core
+@import "core/links";
+
+// Utilities
+@import "utilities/overwrites";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.app-c-email-link__icon {
+  position: relative;
+  float: left;
+  margin-right: .5em;
+  top: 4px;
+}

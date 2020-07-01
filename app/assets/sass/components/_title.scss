@@ -1,0 +1,43 @@
+// From https://github.com/alphagov/govuk_publishing_components/blob/master/app/assets/stylesheets/govuk_publishing_components/components/_title.scss
+
+.app-c-title--inverse {
+  color: govuk-colour("white");
+
+  .app-c-title__text,
+  .app-c-title__context {
+    color: inherit;
+  }
+}
+
+.app-c-title__context {
+  @include govuk-font(24);
+  color: $govuk-secondary-text-colour;
+  margin: 0;
+}
+
+.app-c-title__context-link {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: $govuk-focus-text-colour;
+  }
+}
+
+.app-c-title__text {
+  @extend %govuk-heading-xl;
+  margin: 0;
+}
+
+.app-c-title__text--long {
+  @extend %govuk-heading-l;
+}
