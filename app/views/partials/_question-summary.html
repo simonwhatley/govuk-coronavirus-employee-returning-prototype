@@ -4,14 +4,6 @@
   <a class="govuk-link govuk-link--no-visited-state" href="/">Start again</a>
 </p>
 
-{%- set sectorsHtml %}
-<ul class="govuk-list">
-  {%- for sector in data.answers['sectors'] %}
-    <li>{{ sector | getAnswerAsString('sectors') }}</li>
-  {% endfor -%}
-</ul>
-{% endset -%}
-
 {{ govukTable({
   firstCellIsHeader: false,
   head: [
@@ -26,6 +18,93 @@
     }
   ],
   rows: [
-
+    [
+      {
+        text: "Are you able to do your job from home?"
+      },
+      {
+        text: data.answers['work-from-home'] | getAnswerAsString('work-from-home')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=work-from-home">Change <span class="govuk-visually-hidden">if you are able to work from home</span></a>'
+      }
+    ] if data.answers['work-from-home'] | length,
+    [
+      {
+        text: "Where do you work?"
+      },
+      {
+        text: data.answers['where-you-work'] | getAnswerAsString('where-you-work')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=where-you-work">Change <span class="govuk-visually-hidden">where you work</span></a>'
+      }
+    ] if data.answers['where-you-work'] | length,
+    [
+      {
+        text: "Is your workplace one of these exceptions?"
+      },
+      {
+        text: data.answers['workplace-exception'] | getAnswerAsString('workplace-exception')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=workplace-exception">Change <span class="govuk-visually-hidden">whether your workplace is one of these exceptions</span></a>'
+      }
+    ] if data.answers['workplace-exception'] | length,
+    [
+      {
+        text: "Is your workplace a livestock auction house?"
+      },
+      {
+        text: data.answers['workplace-livestock-auction'] | getAnswerAsString('workplace-livestock-auction')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=workplace-livestock-auction">Change <span class="govuk-visually-hidden">whether your workplace is a livestock auction house</span></a>'
+      }
+    ] if data.answers['workplace-livestock-auction'] | length,
+    [
+      {
+        text: "Are you shielding at home because you are clinically extremely vulnerable?"
+      },
+      {
+        text: data.answers['clinically-extremely-vulnerable'] | getAnswerAsString('clinically-extremely-vulnerable')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=clinically-extremely-vulnerable">Change <span class="govuk-visually-hidden">whether you are shielding at home because you are clinically extremely vulnerable</span></a>'
+      }
+    ] if data.answers['clinically-extremely-vulnerable'] | length,
+    [
+      {
+        text: "Are you clinically vulnerable?"
+      },
+      {
+        text: data.answers['clinically-vulnerable'] | getAnswerAsString('clinically-vulnerable')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=clinically-vulnerable">Change <span class="govuk-visually-hidden">whether you are clinically vulnerable</span></a>'
+      }
+    ] if data.answers['clinically-vulnerable'] | length,
+    [
+      {
+        text: "Do you live with someone who is clinically extremely vulnerable?"
+      },
+      {
+        text: data.answers['live-with-vulnerable'] | getAnswerAsString('live-with-vulnerable')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=live-with-vulnerable">Change <span class="govuk-visually-hidden">whether you are living with someone whoe is clinically extremely vulnerable</span></a>'
+      }
+    ] if data.answers['live-with-vulnerable'] | length,
+    [
+      {
+        text: "Do you have responsibilities for childcare or other dependents that make it difficult for you to go to work?"
+      },
+      {
+        text: data.answers['childcare-responsibilities'] | getAnswerAsString('childcare-responsibilities')
+      },
+      {
+        html: '<a class="govuk-link no-visited-state" href="/change-answer?question=childcare-responsibilities">Change <span class="govuk-visually-hidden">whether you are living with someone whoe is clinically extremely vulnerable</span></a>'
+      }
+    ] if data.answers['childcare-responsibilities'] | length
   ]
 }) }}
