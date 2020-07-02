@@ -76,6 +76,7 @@ exports.find = function(answers) {
 
     if (answers['childcare-responsibilities'] == 'yes') {
       outcomes.push('help_with_childcare');
+      outcomes.push('taking_time_off');
     }
 
   }
@@ -95,7 +96,12 @@ exports.find = function(answers) {
 
   }
 
-
+  // --------------------------------------------------
+  // LEAVE THIS LAST
+  // --------------------------------------------------
+  if (!outcomes.length) {
+    outcomes.push('go_back_to_work');
+  }
 
   return outcomes;
 }

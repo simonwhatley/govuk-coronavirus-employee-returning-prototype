@@ -421,13 +421,14 @@ router.post('/childcare-responsibilities', checkHasAnswers, (req, res) => {
 // results
 // --------------------------------------------------
 router.get('/results', checkHasAnswers, (req, res) => {
+  // console.log(req.headers.referer.substring(req.headers.referer.lastIndexOf('/')+1));
 
   res.render('results', {
     outcomes: Outcomes.find(),
     rules: Rules.find(req.session.data.answers),
     actions: {
       start: req.baseUrl + '/',
-      back: req.baseUrl + '/question'
+      back: req.headers.referer
     }
   });
 

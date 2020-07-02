@@ -55,8 +55,8 @@
             }
           },
           hint: {
-            text: question.hint.text if question.hint.text,
-            html: question.hint.html if question.hint.html
+            text: question.hint.text | markdownToHtml | safe if question.hint.isMarkdown else question.hint.text,
+            classes: "app-c-markdown" if question.hint.isMarkdown
           } if question.hint,
           errorMessage: errors | getErrorMessage(question.id),
           items: question.items

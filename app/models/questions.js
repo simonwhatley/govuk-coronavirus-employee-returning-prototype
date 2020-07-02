@@ -20,7 +20,7 @@ exports.question = function(questionId, answerValue) {
       item.checked = false;
 
       if (question.type == 'single') {
-        if (item.value === answerValue) {
+        if (item.value == answerValue) {
           item.checked = true;
         } else {
           item.checked = false;

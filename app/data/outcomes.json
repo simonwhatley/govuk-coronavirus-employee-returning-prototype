@@ -1,42 +1,38 @@
 [
   {
     "id": "work_from_home",
-    "title": "You should work from home",
-    "description": "## You should work from home\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "## You should work from home\n\nYour manager should take all reasonable steps to help you work from home by:\n\n- discussing home working arrangements\n- ensuring you have the right equipment, for example remote access to work systems\n- including you in all necessary communications\n- looking after your physical and mental wellbeing"
   },
   {
     "id": "work_from_home_help",
-    "title": "You should work from home or get support if you can’t",
-    "description": "## You should work from home or get support if you can’t\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "## You should work from home or get support if you can't\n\nYou should make every effort to work from home and your employer is expected to help you to do this.\n\nIf you are unable to work from home, you should discuss and agree your options with your employer.\n\n[Find out more about what your options are.](#)"
   },
   {
     "id": "workplace_should_be_closed",
-    "title": "workplace_should_be_closed",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "workplace_should_be_closed"
   },
   {
-    "id": "sheilding_work_arrangements",
-    "title": "sheilding_work_arrangements",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "id": "shielding_work_arrangements",
+    "description": "shielding_work_arrangements"
   },
   {
     "id": "vulnerable_work_arrangements",
-    "title": "vulnerable_work_arrangements",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "## Get your employer to make arrangements for you to work safely\n\nClinically vulnerable individuals, who are at higher risk of severe illness (for example, people with some pre existing conditions), have been asked to take extra care in observing social distancing and should be helped to work from home, either in their current role or in an alternative role.\n\nIf clinically vulnerable (but not extremely clinically vulnerable) individuals cannot work from home, they should be offered the option of the safest available on site roles, enabling them to stay 2m away from others.\n\nIf they have to spend time within 2m of others, employers should carefully assess whether this involves an acceptable level of risk. As for any workplace risk, employers must take into account specific duties to those with protected characteristics, including, for example, expectant mothers who are, as always, entitled to suspension on full pay if suitable roles cannot be found.\n\n[Find out more about how to work safely in your workplace](#)."
   },
   {
     "id": "keep_your_household_safe",
-    "title": "keep_your_household_safe",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "## Get advice on how to socially distance at work and keep your household safe\n\nIf you are not able to work from home, you should make sure your employer is following guidance on [how to work safely during the coronavirus pandemic](#).\n\nEmployers should pay particular attention to people who live with clinically extremely vulnerable individuals.\n\nYou and your household should follow the guidance on [how to protect clinically extremely vulnerable people](#)."
   },
   {
     "id": "help_with_childcare",
-    "title": "help_with_childcare",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "## Find out if you can send your children back to school or take time off to care for dependents\n\n### School openings\n\n- Primary schools can reopen for children in reception, year 1 and year 6\n- Nurseries and other early years settings, including childminders, can reopen\n- Schools remain closed for other year groups, except for children of key workers and vulnerable children\n\n[Find out if you are classed as a key worker, and if you can send your children back to school](#)."
+  },
+  {
+    "id": "taking_time_off",
+    "description": "### Taking time off\n\nIf you cannot get childcare or need to take time off to care for other dependents, you should be able to take unpaid leave. Find out more about time off to care for dependents on the [ACAS website](#)."
   },
   {
     "id": "go_back_to_work",
-    "title": "go_back_to_work",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "## You can go back to work\n\nYou can go back into work, but your employer must make arrangements for you to work safely.\n\n[Check the guidance on working safely and what you will need to do](#)"
   }
 ]
