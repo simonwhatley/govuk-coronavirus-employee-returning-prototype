@@ -27,8 +27,9 @@
 
       {%- for outcome in outcomes %}
         {%- if outcome.id in rules %}
-          {{ outcome.description | markdownToHtml | safe }}
-          <hr class="govuk-section-break--visible">
+          <div class="call-to-action app-c-markdown">
+            {{ outcome.description | markdownToHtml | safe }}
+          </div>
         {% endif -%}
       {% endfor -%}
 
