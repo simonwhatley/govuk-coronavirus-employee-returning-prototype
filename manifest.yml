@@ -1,5 +1,5 @@
 applications:
-  - name: govuk-coronavirus-business-reopening
+  - name: govuk-coronavirus-employee-returning
     buildpacks:
       - nodejs_buildpack
     env:
