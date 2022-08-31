@@ -1,1 +1,252 @@
-[]
+[
+  {
+    "id": "work-from-home",
+    "name": "answers[work-from-home]",
+    "label": {
+      "text": "Are you able to do your job from home?"
+    },
+    "hint": {
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes"
+      },
+      {
+        "value": "maybe",
+        "text": "Yes, but my employer has not made the appropriate arrangements"
+      },
+      {
+        "value": "no",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "id": "where-you-work",
+    "name": "answers[where-you-work]",
+    "label": {
+      "text": "Where do you work?"
+    },
+    "hint": {
+      "text": "This list does not include all types of businesses that are currently open or allowed to open soon. If your workplace is not in the list, please select the last option ‘None of these’.",
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "food_and_drink",
+        "text": "Restaurant, pub, wine bar, café or canteen, or other food and drink establishment"
+      },
+      {
+        "value": "salon_parlour",
+        "text": "Hairdressers, barbers, beauty or nail salon, piercing and tattoo parlour, spa or massage parlour"
+      },
+      {
+        "value": "retail",
+        "text": "Retail"
+      },
+      {
+        "value": "auction_house",
+        "text": "Auction houses"
+      },
+      {
+        "value": "holiday_accommodation",
+        "text": "Holiday accommodation or caravan parks"
+      },
+      {
+        "value": "driving_schools",
+        "text": "Driving schools, test centres, and driving instructors"
+      },
+      {
+        "value": "libraries",
+        "text": "Libraries"
+      },
+      {
+        "value": "community_centre",
+        "text": "Community centres"
+      },
+      {
+        "value": "places_of_worship",
+        "text": "Places of worship"
+      },
+      {
+        "value": "museums_or_galleries",
+        "text": "Museums or galleries"
+      },
+      {
+        "value": "nightclubs_or_gambling",
+        "text": "Nightclubs, bingo halls or casinos"
+      },
+      {
+        "value": "cinema",
+        "text": "Cinema, theatre or concert hall"
+      },
+      {
+        "value": "leisure_centre",
+        "text": "Indoor fitness studios, gyms, swimming pools or other indoor leisure centres"
+      },
+      {
+        "value": "indoor_attraction",
+        "text": "Indoor attractions at aquariums, zoos, safari parks, wildlife centres visitor farms and other animal attractions"
+      },
+      {
+        "value": "indoor_visitor_centres",
+        "text": "Indoor attractions and visitor centres at botanical or other gardens, heritage sites, landmarks, film studios or similar"
+      },
+      {
+        "value": "indoor_recreation",
+        "text": "Indoor arcade, bowling alley, soft play centre or similar facility"
+      },
+      {
+        "value": "funfair",
+        "text": "Funfairs, skating rinks or adventure parks"
+      },
+      {
+        "value": "outdoor_recreation",
+        "text": "Playgrounds, outdoor gyms or outdoor swimming pools, model villages"
+      },
+      {
+        "value": {},
+        "divider": "or"
+      },
+      {
+        "value": "other",
+        "text": "None of these"
+      }
+    ]
+  },
+  {
+    "id": "workplace-livestock-auction",
+    "name": "answers[workplace-livestock-auction]",
+    "label": {
+      "text": "Is your workplace a livestock auction house?"
+    },
+    "hint": {
+      "text": "Your workplace should be closed unless you work at a livestock auction house.",
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes"
+      },
+      {
+        "value": "no",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "id": "workplace-exception",
+    "name": "answers[workplace-exception]",
+    "label": {
+      "text": "Is your workplace one of these exceptions?"
+    },
+    "hint": {
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes, I work at one of these exceptions"
+      },
+      {
+        "value": "no",
+        "text": "No, I do not work at one of these exceptions"
+      }
+    ]
+  },
+  {
+    "id": "clinically-extremely-vulnerable",
+    "name": "answers[clinically-extremely-vulnerable]",
+    "label": {
+      "text": "Are you shielding at home because you are clinically extremely vulnerable?"
+    },
+    "hint": {
+      "text": "You will have been told by your doctor if you are clinically extremely vulnerable.",
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes"
+      },
+      {
+        "value": "no",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "id": "clinically-vulnerable",
+    "name": "answers[clinically-vulnerable]",
+    "label": {
+      "text": "Are you clinically vulnerable?"
+    },
+    "hint": {
+      "text": "You are clinically vulnerable if you are aged 70 or older (regardless of medical condition), pregnant, or under 70 with an underlying health condition listed below:\n\n-   chronic (long-term) mild to moderate respiratory diseases, such as asthma, chronic obstructive pulmonary disease (COPD), emphysema or bronchitis\n-   chronic heart disease, such as heart failure\n-   chronic kidney disease\n-   chronic liver disease, such as hepatitis\n-   chronic neurological conditions, such as Parkinson’s disease, motor neurone disease, multiple sclerosis (MS), or cerebral palsy\n-   diabetes\n-   a weakened immune system as the result of certain conditions, treatments like chemotherapy, or medicines such as steroid tablets\n-   seriously overweight (a body mass index (BMI) of 40 or above)",
+      "isMarkdown": true,
+      "html": "<p class=\"govuk-body\">You are clinically vulnerable if you are aged 70 or older (regardless of medical condition), pregnant, or under 70 with an underlying health condition listed below:</p>\n<ul class=\"govuk-list govuk-list--bullet\">\n<li>chronic (long-term) mild to moderate respiratory diseases, such as asthma, chronic obstructive pulmonary disease (COPD), emphysema or bronchitis</li>\n<li>chronic heart disease, such as heart failure</li>\n<li>chronic kidney disease</li>\n<li>chronic liver disease, such as hepatitis</li>\n<li>chronic neurological conditions, such as Parkinson’s disease, motor neurone disease, multiple sclerosis (MS), or cerebral palsy</li>\n<li>diabetes</li>\n<li>a weakened immune system as the result of certain conditions, treatments like chemotherapy, or medicines such as steroid tablets</li>\n<li>seriously overweight (a body mass index (BMI) of 40 or above)</li>\n</ul>"
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes"
+      },
+      {
+        "value": "no",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "id": "live-with-vulnerable",
+    "name": "answers[live-with-vulnerable]",
+    "label": {
+      "text": "Do you live with someone who is clinically extremely vulnerable?"
+    },
+    "hint": {
+      "text": "They will have been told by their doctor if they are considered clinically extremely vulnerable.",
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes"
+      },
+      {
+        "value": "no",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "id": "childcare-responsibilities",
+    "name": "answers[childcare-responsibilities]",
+    "label": {
+      "text": "Do you have responsibilities for childcare or other dependents that make it difficult for you to go to work?"
+    },
+    "hint": {
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes"
+      },
+      {
+        "value": "no",
+        "text": "No"
+      }
+    ]
+  }
+]

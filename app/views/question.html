@@ -36,7 +36,8 @@
             }
           },
           hint: {
-            text: question.hint.text
+            text: question.hint.text | markdownToHtml | safe if question.hint.isMarkdown else question.hint.text,
+            classes: "app-c-markdown" if question.hint.isMarkdown
           } if question.hint,
           errorMessage: errors | getErrorMessage(question.id),
           items: question.items
@@ -54,7 +55,8 @@
             }
           },
           hint: {
-            text: question.hint.text
+            text: question.hint.text | markdownToHtml | safe if question.hint.isMarkdown else question.hint.text,
+            classes: "app-c-markdown" if question.hint.isMarkdown
           } if question.hint,
           errorMessage: errors | getErrorMessage(question.id),
           items: question.items
